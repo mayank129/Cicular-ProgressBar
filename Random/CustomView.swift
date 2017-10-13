@@ -35,8 +35,7 @@ class CustomView: UIView {
         UIColor.white.setFill()
         path2.fill()
         
-        let path = UIBezierPath(arcCenter: CGPoint(x: rect.size.width/2, y:rect.size.height/2), radius: 100, startAngle: CGFloat(3 * M_PI/2), endAngle: CGFloat(7
-            * M_PI/2), clockwise: true)
+        let path = UIBezierPath(arcCenter: CGPoint(x: rect.size.width/2, y:rect.size.height/2), radius: 100, startAngle: CGFloat(3 * M_PI/2), endAngle: CGFloat(7 * M_PI/2), clockwise: true)
         
         circleLayer = CAShapeLayer()
         
@@ -53,7 +52,7 @@ class CustomView: UIView {
         layer.addSublayer(circleLayer)
         let animation = CABasicAnimation(keyPath: "strokeEnd")
         
-        animation.duration = 2.0
+        animation.duration = 1
         
        
         animation.fromValue = 0

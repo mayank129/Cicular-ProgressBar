@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ak0-Jh-X51">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bgp-WE-RQx">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -57,8 +57,8 @@
                                 <rect key="frame" x="49" y="203" width="277" height="260"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="90%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfU-8g-CoA">
-                                        <rect key="frame" x="99" y="103" width="78" height="45"/>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfU-8g-CoA">
+                                        <rect key="frame" x="99" y="108" width="78" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -77,7 +77,92 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1836" y="51"/>
+            <point key="canvasLocation" x="1786" y="56"/>
+        </scene>
+        <!--Star Rating View Controller-->
+        <scene sceneID="PW9-r5-ZTE">
+            <objects>
+                <viewController id="bgp-WE-RQx" customClass="StarRatingViewController" customModule="Random" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R0V-Ia-Udc"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZhT-5f-Q33"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sJg-TB-4nR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="67J-Mc-P3U">
+                                <rect key="frame" x="91" y="272" width="200" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AD7-Ly-OLe">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="66"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                        <color key="tintColor" red="1" green="0.83515485363608277" blue="0.26334220432988609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="☆"/>
+                                        <connections>
+                                            <action selector="starButtonTapped:" destination="bgp-WE-RQx" eventType="touchUpInside" id="zXg-Oe-1Qv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kvl-F6-iNS">
+                                        <rect key="frame" x="40" y="0.0" width="40" height="66"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                        <color key="tintColor" red="1" green="0.83515485363608277" blue="0.26334220432988609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="☆"/>
+                                        <connections>
+                                            <action selector="starButtonTapped:" destination="bgp-WE-RQx" eventType="touchUpInside" id="S8p-xJ-gM1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSO-bR-hZn">
+                                        <rect key="frame" x="80" y="0.0" width="40" height="66"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                        <color key="tintColor" red="1" green="0.83515485363608277" blue="0.26334220432988609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="☆"/>
+                                        <connections>
+                                            <action selector="starButtonTapped:" destination="bgp-WE-RQx" eventType="touchUpInside" id="7kq-zm-5KC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0M-TE-1Co">
+                                        <rect key="frame" x="120" y="0.0" width="40" height="66"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                        <color key="tintColor" red="1" green="0.83515485363608277" blue="0.26334220432988609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="☆"/>
+                                        <connections>
+                                            <action selector="starButtonTapped:" destination="bgp-WE-RQx" eventType="touchUpInside" id="m40-FY-qGk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVb-Zv-kgI">
+                                        <rect key="frame" x="160" y="0.0" width="40" height="66"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                        <color key="tintColor" red="1" green="0.83515485363608277" blue="0.26334220432988609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="☆"/>
+                                        <connections>
+                                            <action selector="starButtonTapped:" destination="bgp-WE-RQx" eventType="touchUpInside" id="XWr-8F-s7S"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="☆☆☆☆☆" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Mf-Zs-OCd" customClass="RatingLabel" customModule="Random" customModuleProvider="target">
+                                <rect key="frame" x="101" y="182" width="178" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outletCollection property="starButton" destination="AD7-Ly-OLe" collectionClass="NSMutableArray" id="eCd-pD-eNj"/>
+                        <outletCollection property="starButton" destination="Kvl-F6-iNS" collectionClass="NSMutableArray" id="YR8-gj-rWh"/>
+                        <outletCollection property="starButton" destination="SSO-bR-hZn" collectionClass="NSMutableArray" id="5L8-4D-Tis"/>
+                        <outletCollection property="starButton" destination="H0M-TE-1Co" collectionClass="NSMutableArray" id="LRY-8A-lHd"/>
+                        <outletCollection property="starButton" destination="FVb-Zv-kgI" collectionClass="NSMutableArray" id="fkB-Yp-avt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dQw-dm-4oG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2852" y="4"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Nhq-my-J0c">
