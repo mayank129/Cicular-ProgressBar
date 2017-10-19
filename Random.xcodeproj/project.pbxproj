@@ -17,6 +17,7 @@
 		A8363EA31F79184C00C967EF /* RandomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8363EA21F79184C00C967EF /* RandomUITests.swift */; };
 		A8363EB11F7918B500C967EF /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8363EB01F7918B500C967EF /* CustomView.swift */; };
 		A8363EB31F79338F00C967EF /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8363EB21F79338F00C967EF /* MainScreenViewController.swift */; };
+		A842939F1F962BD100150436 /* AverageStarRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = A842939E1F962BD100150436 /* AverageStarRating.swift */; };
 		A8CC99721F8F562A00324055 /* StarRatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CC99711F8F562A00324055 /* StarRatingViewController.swift */; };
 		A8CC99741F8F79A800324055 /* RatingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CC99731F8F79A800324055 /* RatingLabel.swift */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 		A8363EA41F79184C00C967EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8363EB01F7918B500C967EF /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		A8363EB21F79338F00C967EF /* MainScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		A842939E1F962BD100150436 /* AverageStarRating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AverageStarRating.swift; path = ../AverageStarRating.swift; sourceTree = "<group>"; };
 		A8CC99711F8F562A00324055 /* StarRatingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarRatingViewController.swift; sourceTree = "<group>"; };
 		A8CC99731F8F79A800324055 /* RatingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				A8363E7F1F79184B00C967EF /* AppDelegate.swift */,
+				A842939E1F962BD100150436 /* AverageStarRating.swift */,
 				A8363E811F79184B00C967EF /* ViewController.swift */,
 				A8363E831F79184B00C967EF /* Main.storyboard */,
 				A8CC99731F8F79A800324055 /* RatingLabel.swift */,
@@ -278,6 +281,7 @@
 				A8363EB31F79338F00C967EF /* MainScreenViewController.swift in Sources */,
 				A8363E881F79184C00C967EF /* Random.xcdatamodeld in Sources */,
 				A8363EB11F7918B500C967EF /* CustomView.swift in Sources */,
+				A842939F1F962BD100150436 /* AverageStarRating.swift in Sources */,
 				A8CC99721F8F562A00324055 /* StarRatingViewController.swift in Sources */,
 				A8363E821F79184B00C967EF /* ViewController.swift in Sources */,
 				A8363E801F79184B00C967EF /* AppDelegate.swift in Sources */,

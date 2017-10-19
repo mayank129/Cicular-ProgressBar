@@ -34,6 +34,7 @@ class RatingLabel: UILabel {
             }
         }
         text = str
+        backgroundColor = UIColor.green
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
